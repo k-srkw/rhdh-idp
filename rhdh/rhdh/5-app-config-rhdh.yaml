@@ -67,6 +67,6 @@ data:
           - tekton
         admin:
           users:
-            - name: user:default/k.shirakawa1020gmmail.com
+            - name: "user:default/k.shirakawa1020@gmail.com"
           superUsers:
-            - name: user:default/k.shirakawa1020gmmail.com
+            - name: "user:default/k.shirakawa1020@gmail.com"
