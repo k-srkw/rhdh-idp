@@ -70,3 +70,15 @@ data:
             - name: "user:default/k.shirakawa1020@gmail.com"
           superUsers:
             - name: "user:default/k.shirakawa1020@gmail.com"
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: dynamic-plugins-rhdh
+  namespace: rhdh
+data:
+ dynamic-plugins.yaml: |
+   includes:
+     - dynamic-plugins.default.yaml
+     - /dynamic-plugins-root/dynamic-plugins.extensions.yaml
+   plugins: []
