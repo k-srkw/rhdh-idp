@@ -54,3 +54,19 @@ data:
               resolvers:
                 - resolver: emailMatchingUserEntityProfileEmail
                   dangerouslyAllowSignInWithoutUserInCatalog: true
+    permission:
+      enabled: true
+      rbac:
+        pluginsWithPermission:
+          - catalog
+          - scaffolder
+          - permission
+          - kubernetes
+          - topology
+          - argocd
+          - tekton
+        admin:
+          users:
+            - name: user:default/k.shirakawa1020gmmail.com
+          superUsers:
+            - name: user:default/k.shirakawa1020gmmail.com
