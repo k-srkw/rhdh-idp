@@ -28,3 +28,13 @@ spec:
       enabled: true
       host: rhdh.apps.cluster-w2srt.dynamic.redhatworkshops.io
       subdomain: apps.cluster-w2srt.dynamic.redhatworkshops.io
+  deployment:
+    patch:
+      spec:
+        template:
+          spec:
+            volumes:
+              - $patch: replace
+                name: dynamic-plugins-root
+                persistentVolumeClaim:
+                  claimName: dynamic-plugins-root
