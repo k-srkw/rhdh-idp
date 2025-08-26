@@ -77,8 +77,8 @@ metadata:
   name: dynamic-plugins-rhdh
   namespace: demo-project
 data:
- dynamic-plugins.yaml: |
-   includes:
-     - dynamic-plugins.default.yaml
-     - /dynamic-plugins-root/dynamic-plugins.extensions.yaml
-   plugins: []
+  dynamic-plugins.yaml: |
+    includes:
+      - dynamic-plugins.default.yaml
+      - /dynamic-plugins-root/dynamic-plugins.extensions.yaml
+    plugins: []
