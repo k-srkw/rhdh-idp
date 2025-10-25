@@ -29,13 +29,3 @@ spec:
       enabled: true
       host: rhdh.apps.cluster-q4krc.dynamic.redhatworkshops.io
       subdomain: apps.cluster-q4krc.dynamic.redhatworkshops.io
-  deployment:
-    patch:
-      spec:
-        template:
-          spec:
-            volumes:
-              - $patch: replace
-                name: dynamic-plugins-root
-                persistentVolumeClaim:
-                  claimName: dynamic-plugins-root
